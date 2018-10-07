@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,79 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlidingCards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EH7-5V-2Fc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1_winter" translatesAutoresizingMaskIntoConstraints="NO" id="87r-W0-PRo">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2_spring" translatesAutoresizingMaskIntoConstraints="NO" id="NWx-s6-Kvf">
+                                        <rect key="frame" x="320" y="0.0" width="320" height="568"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3_summer" translatesAutoresizingMaskIntoConstraints="NO" id="UZK-Ai-gab">
+                                        <rect key="frame" x="640" y="0.0" width="320" height="568"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4_autumn" translatesAutoresizingMaskIntoConstraints="NO" id="pU4-zL-IFe">
+                                        <rect key="frame" x="960" y="0.0" width="320" height="568"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="87r-W0-PRo" firstAttribute="top" secondItem="EH7-5V-2Fc" secondAttribute="top" id="35F-0G-Atw"/>
+                                    <constraint firstItem="UZK-Ai-gab" firstAttribute="height" secondItem="EH7-5V-2Fc" secondAttribute="height" id="3KS-ls-gft"/>
+                                    <constraint firstItem="87r-W0-PRo" firstAttribute="bottom" secondItem="EH7-5V-2Fc" secondAttribute="bottom" id="5im-P1-am1"/>
+                                    <constraint firstItem="NWx-s6-Kvf" firstAttribute="width" secondItem="EH7-5V-2Fc" secondAttribute="width" id="66J-HI-QZU"/>
+                                    <constraint firstItem="87r-W0-PRo" firstAttribute="leading" secondItem="EH7-5V-2Fc" secondAttribute="leading" id="7lB-qy-gew"/>
+                                    <constraint firstItem="87r-W0-PRo" firstAttribute="width" secondItem="EH7-5V-2Fc" secondAttribute="width" id="9eh-2h-DcG"/>
+                                    <constraint firstItem="UZK-Ai-gab" firstAttribute="width" secondItem="EH7-5V-2Fc" secondAttribute="width" id="BsJ-js-MTM"/>
+                                    <constraint firstItem="NWx-s6-Kvf" firstAttribute="height" secondItem="EH7-5V-2Fc" secondAttribute="height" id="Cfa-CP-IDo"/>
+                                    <constraint firstItem="pU4-zL-IFe" firstAttribute="trailing" secondItem="EH7-5V-2Fc" secondAttribute="trailing" id="Ciq-9V-HFm"/>
+                                    <constraint firstItem="NWx-s6-Kvf" firstAttribute="leading" secondItem="87r-W0-PRo" secondAttribute="trailing" id="Fzr-Zi-r6E"/>
+                                    <constraint firstItem="NWx-s6-Kvf" firstAttribute="top" secondItem="EH7-5V-2Fc" secondAttribute="top" id="Goq-GQ-kPi"/>
+                                    <constraint firstItem="pU4-zL-IFe" firstAttribute="top" secondItem="EH7-5V-2Fc" secondAttribute="top" id="Kdk-hR-aUb"/>
+                                    <constraint firstItem="pU4-zL-IFe" firstAttribute="height" secondItem="EH7-5V-2Fc" secondAttribute="height" id="Np2-NT-Rg1"/>
+                                    <constraint firstItem="UZK-Ai-gab" firstAttribute="leading" secondItem="NWx-s6-Kvf" secondAttribute="trailing" id="SfG-HN-GUF"/>
+                                    <constraint firstItem="pU4-zL-IFe" firstAttribute="width" secondItem="EH7-5V-2Fc" secondAttribute="width" id="Ynt-3K-dIP"/>
+                                    <constraint firstItem="pU4-zL-IFe" firstAttribute="bottom" secondItem="EH7-5V-2Fc" secondAttribute="bottom" id="cGk-Co-6o5"/>
+                                    <constraint firstItem="UZK-Ai-gab" firstAttribute="top" secondItem="EH7-5V-2Fc" secondAttribute="top" id="jpV-IJ-IL0"/>
+                                    <constraint firstItem="pU4-zL-IFe" firstAttribute="leading" secondItem="UZK-Ai-gab" secondAttribute="trailing" id="m7h-xj-xas"/>
+                                    <constraint firstItem="UZK-Ai-gab" firstAttribute="bottom" secondItem="EH7-5V-2Fc" secondAttribute="bottom" id="rew-41-GLR"/>
+                                    <constraint firstItem="87r-W0-PRo" firstAttribute="height" secondItem="EH7-5V-2Fc" secondAttribute="height" id="viz-g5-tto"/>
+                                    <constraint firstItem="NWx-s6-Kvf" firstAttribute="bottom" secondItem="EH7-5V-2Fc" secondAttribute="bottom" id="yFS-mD-VIK"/>
+                                </constraints>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="f7m-RY-lQ8">
+                                <rect key="frame" x="132.5" y="511" width="55" height="37"/>
+                            </pageControl>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f7m-RY-lQ8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="99P-By-qka"/>
+                            <constraint firstItem="EH7-5V-2Fc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Yg4-xM-lfz"/>
+                            <constraint firstItem="EH7-5V-2Fc" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="bIB-TX-cFK"/>
+                            <constraint firstItem="EH7-5V-2Fc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="cJE-ay-MYE"/>
+                            <constraint firstItem="EH7-5V-2Fc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iHX-V8-8MC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f7m-RY-lQ8" secondAttribute="bottom" constant="20" id="plY-vv-CdG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="pageControl" destination="f7m-RY-lQ8" id="IKM-4T-dSj"/>
+                        <outlet property="scrollView" destination="EH7-5V-2Fc" id="HsJ-xs-MT3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="1_winter" width="1800" height="2400"/>
+        <image name="2_spring" width="1800" height="2700"/>
+        <image name="3_summer" width="1800" height="2700"/>
+        <image name="4_autumn" width="1800" height="2700"/>
+    </resources>
 </document>
