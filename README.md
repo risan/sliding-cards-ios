@@ -14,4 +14,4 @@ Based on the tutorial by Chris Ching: [How To Do Full Screen Sliding Cards](http
 
 ## License
 
-MIT © [Risan Bagja Pradana](https://risan.io)
+MIT © [Risan Bagja Pradana](https://bagja.net)
